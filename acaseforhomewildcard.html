@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="favicon.svg" type="image/svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Case For... | Wildcard Media</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Google Fonts -->
+    <title>WildcardMedia | A case for...</title>
+    <link rel="stylesheet" href="Podcast sites/Wildcard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
 
-    <header class="topbar">
-        <nav class="nav-links">
-            <a href="#" class="logo-link">
-                <img src="../Other logos/Wildcard.png" alt="Wildcard Media Logo" class="logo">
-            </a>
+<nav class="topnav" id="myTopnav">
+    <div class="logo-container">
+        <a href="index.html">
+    <title>WildcardMedia | A case for...</title>
+            <img src="Other logos/Wildcard.png" alt="WildcardMedialogo" width="500">
+        </a>
+    </div>
+    
+    <div class="nav-links" id="navLinks">
+        <a class="button1" href="index.html">Home</a>
+        <a class="button2" href="AllergenCamNews.html">Podcasts</a>
+        <a class="button3" href="AllergenCamHowItWorks.html">Contact</a>
+        <a class="button4" href="AllergenCamNotify.html">About</a>
+    </div>
 
-            <div class="links-group">
-                <a href="#">Podcasts</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </a>
+</nav>
 
-    <main class="container">
+<main style="padding: 40px 20px; min-height: calc(100vh - 200px);">
+    <img class="acaseformainimage" width="100%" scale="2" src="Podcast logos/A CASE FOR... (1).png" alt="A case for logo">
+    <h1>Tune in A Case For... the biweekly podcast where we step into the courtroom of daily life to cross-examine a brand-new issue through a debate. Each week after debate you can vote on our website!</h1>
+    <div id='buzzsprout-large-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2626222.js?container_id=buzzsprout-large-player&player=large'></script>
+    <div class="nav-links" id="navLinks">
+        <a class="button5" href="https://wildcardmedia.buzzsprout.com/2626222/fan_mail">Send us fan mail!</a>
+        <a class="button6" href="https://wildcardmedia.buzzsprout.com/2626222/episodes">All episodes</a>
+        <a class="button7" href="AllergenCamHowItWorks.html">Vote</a>
+        <a class="button8" href="https://wildcardmedia.buzzsprout.com/2626222/about">Hosts</a>
+    </div>
 
-        <!-- Hero Section -->
-        <div class="hero-wrapper">
-            <img 
-                src="../Podcast logos/A CASE FOR... (1).png" 
-                alt="A Case For Podcast Logo" 
-                class="podcast-hero"
-            >
-        </div>
 
-        <section class="podcast-info">
-            <h1 class="podcast-title">A Case For...</h1>
 
-            <p class="podcast-description">
-                Tune into a weekly podcast where we step into the courtroom of daily life to cross-examine a brand-new issue through debate. Each week after the debate, you can vote on our website!
-            </p>
+</main>
 
-            <a href="#" class="btn-primary">Listen & Vote Now</a>
-        </section>
 
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Wildcard Media. All rights reserved.</p>
-    </footer>
+<footer style="background-color: white; border: solid 0.5px darkgrey; border-radius: 10px; margin: 10px; padding: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1), -2px 0 4px rgba(0, 0, 0, 0.1);">
+    <p>© 2026 Wildcard Media. All rights reserved.</p>
+</footer>
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("responsive");
+    }
+</script>
 
 </body>
 </html>
