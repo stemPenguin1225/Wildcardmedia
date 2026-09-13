@@ -1,187 +1,242 @@
-/* =========================
-   Base Reset
-========================= */
+/* 1. Basic Setup */
+        acaseformainimage {
+            display: block;
+            margin: 0 auto;
+            height: auto;
+            width: 100vw;
+            
+        }
+        body {
+            margin: 0;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        .formbox {
+                background-color: white;
+                border: solid 0.5px darkgrey;
+                border-radius: 10px;
+                margin: 50px auto;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: none;
+                box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1), -2px 0 4px rgba(0, 0, 0, 0.1); 
+                max-width: 600px;
+                padding-bottom: 20px;
+            }
 
+        /* 2. Topbar Container */
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: sticky; /* Keeps it at the top */
+            top: 10px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin: 10px 10px 0 10px;
+            border-radius: 10px;
+            border: solid;
+            border-width: 0.5px;
+            border-color: darkgrey;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1), -2px 0 4px rgba(0, 0, 0, 0.1);
+        }
 
-/* =========================
-   Body
-   Anton is the default font
-========================= */
+        /* 3. Scalable Logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
 
-body {
-    font-family: 'Anton', sans-serif;
-    color: #222222;
-    background-color: #fafafa;
-    padding-top: 100px;
-    line-height: 1.6;
-}
+        .logo-container a {
+            padding: 0;
+            background: none;
+            display: flex;
+            align-items: center;
+        }
 
+        .logo-container a:hover {
+            background: none;
+        }
 
-/* =========================
-   Topbar
-   Inter / sans-serif
-========================= */
+        /* 4. Navigation Links */
+        .nav-links {
+            display: flex;
+            margin-left: auto;
+            gap: 15px;
+            
+        }
 
-.topbar {
-    font-family: 'Inter', system-ui, sans-serif;
+        
+        .button1 {
+            background-color: #ff3131;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: background-color 0.3s ease;
+            
+        }
+        .button2 {
+            background-color: #38b6ff;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .button3 {
+            background-color: #ff1fa9;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .button4 {
+            background-color: #00bf63;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .button5 {
+            background-color: #ffde59;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Anton;
+            transition: background-color 0.3s ease;
+            
+        }
+        .button6 {
+            background-color: #ff751f;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Anton;
+            transition: background-color 0.3s ease;
+            
+        }
+        .button7 {
+            background-color: brown;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Anton;
+            transition: background-color 0.3s ease;
+            
+        }
+        .button8 {
+            background-color: lightblue;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Anton;
+            transition: background-color 0.3s ease;
+            
+        }
 
-    background-color: #ffffff;
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    z-index: 1000;
+        .nav-links a:hover {
+            background-color: #8c52ff;
+        }   
 
-    padding: 12px 24px;
+        /* 5. Mobile Icon (Hidden by default) */
+        .topnav .icon {
+            display: none;
+            color: #00aaff;
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        
+        .topnav .icon:hover {
+            color: #ff7700;
+        }
 
-    border: 1px solid #e5e5e5;
-    border-radius: 12px;
+        /* 7. Footer */
+        footer {
+            background-color: white;
+            border: solid 0.5px darkgrey;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1), -2px 0 4px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+    
+        /* 6. Responsive Rules */
+        @media screen and (max-width: 600px) {
+            .topnav {
+                flex-wrap: wrap;
+            }
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-}
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+                padding: 10px 0;
+                order: 3;
+            }
 
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+            .nav-links.responsive {
+                display: flex; /* Show links when toggled */
+            }
+            
+            .nav-links a {
+                width: 100%;
+                text-align: left;
+                box-sizing: border-box;
+                margin: 0;
+            }
 
-    max-width: 1100px;
-    margin: 0 auto;
-}
+            .logo-container {
+                flex: 1;
+                min-width: 100px;
+            }
+            
+            .logo-container img {
+                max-width: 200px;
+                height: auto;
+            }
 
-.logo {
-    height: 36px;
-    width: auto;
-    display: block;
-}
-
-.links-group a {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-
-    text-decoration: none;
-    color: #444444;
-
-    margin-left: 24px;
-
-    transition: color 0.2s ease;
-}
-
-.links-group a:hover {
-    color: #000000;
-}
-
-
-/* =========================
-   Main Container
-   Anton inherited from body
-========================= */
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-
-    text-align: center;
-}
-
-
-/* =========================
-   Hero Section
-========================= */
-
-.hero-wrapper {
-    margin-bottom: 24px;
-}
-
-.podcast-hero {
-    display: block;
-    margin: 0 auto;
-
-    max-width: 380px;
-    width: 100%;
-    height: auto;
-
-    border-radius: 16px;
-
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-
-/* =========================
-   Podcast Details
-   Anton inherited from body
-========================= */
-
-.podcast-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.5rem;
-
-    margin-bottom: 12px;
-    color: #111111;
-
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.podcast-description {
-    font-family: 'Anton', sans-serif;
-    font-size: 1.125rem;
-
-    color: #555555;
-
-    max-width: 640px;
-    margin: 0 auto 28px auto;
-}
-
-
-/* =========================
-   Button
-   Anton inherited from body
-========================= */
-
-.btn-primary {
-    display: inline-block;
-
-    font-family: 'Anton', sans-serif;
-
-    background-color: #111111;
-    color: #ffffff;
-
-    padding: 12px 28px;
-    border-radius: 30px;
-
-    text-decoration: none;
-    font-size: 15px;
-
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.btn-primary:hover {
-    background-color: #333333;
-    transform: translateY(-2px);
-}
-
-
-/* =========================
-   Footer
-   Inter / sans-serif
-========================= */
-
-footer {
-    font-family: 'Inter', system-ui, sans-serif;
-
-    text-align: center;
-
-    padding: 40px 20px;
-
-    font-size: 14px;
-    color: #777777;
-}
+            .topnav .icon {
+                display: block;
+                margin-left: auto;
+                padding: 10px;
+            }
+        }
